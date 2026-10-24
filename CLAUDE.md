@@ -60,3 +60,12 @@ company. Read this first in every session.
 - Test with `python3 -m uvicorn server:app --port 8787` and `node --check
   static/game.js` before pushing.
 - The CEO checks in from an Ubuntu terminal; keep instructions copy-pasteable.
+
+## Desktop launcher (added 2026-10-24)
+
+- `desktop/start.sh` starts the server if needed (log in `logs/server.log`) and opens
+  the browser; `desktop/PixelSoft-HQ.desktop` is installed to `~/Desktop` and
+  `~/.local/share/applications`. Icon = `desktop/icon.png` (placeholder until the
+  Gemini art arrives; brief in `docs/ICON_PROMPT.md`).
+- On this PC the project lives at `/data/pisit/pixelsoft-hq` (symlink `~/pixelsoft-hq`).
+  Repo: https://github.com/Jame3600/banana. `node` is not installed here.

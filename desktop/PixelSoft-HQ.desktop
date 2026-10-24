@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=PixelSoft HQ
+Comment=Pixel-art AI software company game (Fable the CTO)
+Exec=/data/pisit/pixelsoft-hq/desktop/start.sh
+Icon=/data/pisit/pixelsoft-hq/desktop/icon.png
+Terminal=false
+Categories=Game;
+StartupNotify=false
