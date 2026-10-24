@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PixelSoft HQ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div id="stage">
+    <canvas id="game" width="1056" height="632"></canvas>
+
+    <div id="dash">
+      <div id="dash-panel">
+        <div id="dash-head">
+          <span>TOKEN DASHBOARD</span>
+          <button id="dash-close" aria-label="Close">✕</button>
+        </div>
+        <div class="dash-sub">meeting room wall screen · open with /usage</div>
+
+        <div class="dash-label">Session budget <span id="dash-pct">0%</span></div>
+        <div class="dash-track"><div id="dash-bar"></div></div>
+        <div class="dash-sub" id="dash-nums">0 / 0 tokens</div>
+
+        <div class="dash-label">By department</div>
+        <div id="dash-depts"></div>
+
+        <div class="dash-label">Model <span class="dash-sub">switch with /model</span></div>
+        <div id="chips">
+          <button class="chip sel" data-m="fable">FABLE (CTO)</button>
+          <button class="chip" data-m="opus">OPUS (ASST.)</button>
+        </div>
+
+        <div id="dash-btns">
+          <button id="dash-pause" class="warn">Pause agents</button>
+          <button id="dash-cafe" class="hot">Send all to cafeteria</button>
+          <button id="dash-resume" class="ok">Reset &amp; resume</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="log"><div id="log-head">Office log</div><div id="log-body"></div></div>
+  </div>
+
+  <div id="dialog">
+    <span id="dlg-name">SYSTEM</span>
+    <div id="dlg-text">…</div>
+    <div id="dlg-arrow">▼</div>
+  </div>
+
+  <div id="inputbar">
+    <input id="chat" autocomplete="off"
+      placeholder="Type here — press Enter and your CEO walks over to talk…  (/help for commands)">
+    <button id="send">Send</button>
+    <button id="btn-dash" title="Token dashboard">📊</button>
+    <button id="btn-log" title="Office log">🗒</button>
+  </div>
+  <div id="resume-hint">☕ Break time — type <a href="#" id="resume-link">/resume</a> when your tokens reset.</div>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
